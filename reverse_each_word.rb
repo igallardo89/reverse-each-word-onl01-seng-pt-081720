@@ -7,13 +7,13 @@ def reverse_each_word(phrase)
   new_array.join(" ")
 end
 
-def second_att(phrase)
-  se_array = phrase.split(" ")
-  th_array =[ ]
-  se_array.collect do |werk|
-    th_array << werk.reverse 
+def reverse_each_word(string)
+  a_array = string.split(" ") #turn string into an array
+  b_array = []
+  a_array.collect do|werk| #iterate over the array
+    b_array << werk.reverse #reverse each word in the array
   end
-  th_array.join(" ")
+  b_array.join(" ")
 end 
 
 reverse_each_word("Hello there, and how are you?")
